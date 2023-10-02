@@ -1,5 +1,12 @@
 # Zebra-Printer_Trouble-Shooting_Set-and-Collect-System-Log
- トラブル時に取得すべきプリンタの設定情報（Syslog版）
+### トラブル時に取得すべきプリンタの設定情報（Syslog版）
+
+---
+
+ コマンドの詳細はAppleNote-SYSLOG-v4.pdfを参照すること。
+ [Link-OS® Printer Operating System Syslog AppNote 2456935.546169](https://www.zebra.com/content/dam/zebra/software/en/application-notes/AppNote-SYSLOG-v4.pdf)
+
+</br>
 
 ### Syslog 設定方法
 
@@ -18,12 +25,16 @@
         ! U1 setvar "device.syslog.save_local_file" "yes"
         ! U1 do "device.reset" "now"
 
+    ***※ コマンド実行の際は最終行の後に必ずエンター（CR/LF）を入れること！***
+
+    </br>
 
     ![Alt text](image-2.png)
 
 1. プリンタが再起動する。  
     ※ 再起動しない場合は手順を見直して、手順を最初から再実行。
 
+    </br>
 
 ### Syslog 確認方法
 
@@ -43,6 +54,7 @@
         * E:S_CP737.DAT      1024          
         * E:S_CP850_0.DAT      1024  
 
+    </br>
 
 ### Syslog.txt取得方法 (FTPを用いる方法)
 
