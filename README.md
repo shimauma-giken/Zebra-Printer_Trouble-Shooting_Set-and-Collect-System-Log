@@ -38,7 +38,7 @@
 
 ### Syslog 確認方法
 
-1. 下記コマンコマンドを実行。
+1. 下記コマンドを実行。
 
         ! U1 do "file.dir" "E:SYSLOG.TXT"
 
