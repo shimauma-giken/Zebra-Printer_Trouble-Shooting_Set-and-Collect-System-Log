@@ -23,9 +23,7 @@
         ! U1 setvar "device.syslog.enable" "on"
         ! U1 setvar "device.syslog.configuration" "DEBUG,LOCAL"
         ! U1 setvar "device.syslog.save_local_file" "yes"
-        ! U1 do "device.reset" 
-"now"
-        ※ コマンド実行時は最終行に必ずEnter(CR/LF)を入れること！
+        ! U1 do "device.reset" "now"
 
     ***※ コマンド実行の際は最終行の後に必ずエンター（CR/LF）を入れること！***
 
@@ -47,7 +45,6 @@
 
 1. E:SYSLOG.TXTが存在することを確認する。
 
-    
         - DIR E:*.* 
         * E:ANMDJ.TTF  22927536          
         * E:CGTRI_N.FNT     45407          
@@ -70,6 +67,15 @@
     ▼ 例、WinSCPにてプリンタに接続
 
     ![Alt text](image-3.png)
+
+    </br>
+
+
+※FTPを用いた方法が難しい場合はUSBメモリやコマンドを用いてファイル情報を取得ください。
+
+コマンド例、  
+
+        ! U1 do "file.type" "E:[ファイル名]"
 
 
 
